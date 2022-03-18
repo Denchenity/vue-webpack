@@ -1,0 +1,32 @@
+{
+    "name": "home.ru",
+    "version": "1.0.0",
+    "description": "test vue",
+    "main": "index.js",
+    "scripts": {
+      "build": "cross-env NODE_ENV=production webpack --mode production",
+      "dev": "cross-env NODE_ENV=development webpack --mode development",
+      "watch": "webpack watch"
+    },
+    "author": "Denis Drozdov",
+    "license": "ISC",
+    "devDependencies": {
+      "clean-webpack-plugin": "^4.0.0",
+      "cross-env": "^7.0.3",
+      "css-loader": "^6.3.0",
+      "file-loader": "^6.2.0",
+      "mini-css-extract-plugin": "^2.6.0",
+      "postcss-loader": "^6.1.1",
+      "postcss-preset-env": "^6.7.0",
+      "sass": "^1.49.9",
+      "sass-loader": "^12.1.0",
+      "style-loader": "^3.3.0",
+      "vue-loader": "^17.0.0",
+      "webpack": "^5.56.1",
+      "webpack-cli": "^4.8.0"
+    },
+    "dependencies": {
+      "vue": "^3.2.31"
+    }
+  }
+  
