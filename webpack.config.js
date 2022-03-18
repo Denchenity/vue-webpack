@@ -3,7 +3,7 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CssMin = require('mini-css-extract-plugin');
 const {VueLoaderPlugin} = require('vue-loader');
 const {DefinePlugin} = require('webpack');
-//добавить DefinePlugin из webpack для настройки VUE_DEV_TOOL
+
 
 
 const isDev = process.env.NODE_ENV === 'development';
