@@ -2,6 +2,7 @@ const path = require('path');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CssMin = require('mini-css-extract-plugin');
 const {VueLoaderPlugin} = require('vue-loader');
+const {DefinePlugin} = require('webpack');
 //добавить DefinePlugin из webpack для настройки VUE_DEV_TOOL
 
 
@@ -27,7 +28,11 @@ module.exports = {
         new CssMin({
             filename: '[name].css',
         }),
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new DefinePlugin({
+            __VUE_OPTIONS_API__: true,
+            __VUE_PROD_DEVTOOLS__: true
+        })
     ],
     module: {
         rules: [
